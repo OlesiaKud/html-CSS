@@ -3,6 +3,50 @@
     padding: 0;
 }
 
+.center {
+    margin-right: calc(50% - 600px);
+    margin-left: calc(50% - 600px);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #FFF;
+    font-family: "Gilroy"
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../homework_3/fonts/Gilroy-Regular.ttf") format(" woff2"),
+        url("../homework_3/fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+
+    font-family: "Gilroy";
+    src: url("../homework_3/fonts/Gilroy-Bold.ttf") format(" woff2"),
+        url("../homework_3/fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: "Gilroy";
+    src: url("../homework_3/fonts/Gilroy-SemiBold.ttf") format(" woff2"),
+        url("../homework_3/fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+
+    font-family: "Gilroy";
+    src: url("../homework_3/fonts/Gilroy-Medium.ttf") format(" woff2"),
+        url("../homework_3/fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
 a {
     font-style: normal;
     line-height: normal;
@@ -10,75 +54,135 @@ a {
     text-decoration: none;
 }
 
-.header {
-    margin-top: 51px;
-    margin-left: 375px;
 
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.grow {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.be {
+    color: #F25822;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.growbe {
+    display: flex;
+    max-height: 40px;
 }
 
 .head__menu {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* text-align: -webkit-match-parent; */
+    justify-content: right;
+    gap: 20px;
 }
 
 .link__home {
     color: #F25822;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .link {
     color: #000;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .top__content {
     margin-top: 72px;
-    margin-left: 373px;
     margin-bottom: 162px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.top__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .top__header {
-    padding: 74px 1025px 314 px 373px;
+    max-width: 522px;
+    max-height: 222px;
+    /* padding: 74px 1025px 314 px 373px; */
     color: #000;
     font-size: 60px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
 }
 
 .top__info {
+    max-width: 466px;
+    max-height: 48px;
     padding-top: 17px;
-    padding: 313px 1081px 249 px 373 px;
+    /* padding: 313px 1081px 249 px 373 px; */
     color: #888;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
 }
 
+.top__button {
+    padding-top: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 72px;
+}
+
 .btn1 {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+
     border-radius: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     color: #FFF;
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
 }
 
 .btn2 {
     color: #AAA;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
+}
+
+.top_img {
+    width: 545px;
+    height: 375px;
 }
 
 .top__logo {
-    margin-top: 97px;
-    margin-bottom: 96px;
-    margin-left: 345px;
-    /* margin-right: 375px; */
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
